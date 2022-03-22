@@ -2,6 +2,8 @@
 
 #Requires -Version 3.0
 
+[System.Net.ServicePointManager]::SecurityProtocol = @("Tls12","Tls11","Tls","Ssl3")
+
 Add-Type -AssemblyName System.Windows.Forms
 
 New-Item -ItemType "directory" -Path $env:TEMP\CSPCheck -Force
