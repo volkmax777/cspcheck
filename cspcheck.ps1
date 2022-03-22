@@ -1,5 +1,7 @@
 ﻿#ps2exe -title 'КриптоМАКС' -iconFile .\logo.ico -noOutput -noError  .\cspcheck.ps1 .\cspcheck.exe
 
+#Requires -Version 3.0
+
 Add-Type -AssemblyName System.Windows.Forms
 
 New-Item -ItemType "directory" -Path $env:TEMP\CSPCheck -Force
