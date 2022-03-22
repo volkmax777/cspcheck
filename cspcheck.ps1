@@ -1,11 +1,11 @@
-﻿#ps2exe -title 'CSPCheck' -iconFile .\logo.ico -noOutput -noError  .\cspcheck.ps1 .\cspcheck.exe
+﻿#ps2exe -title 'КриптоМАКС' -iconFile .\logo.ico -noOutput -noError  .\cspcheck.ps1 .\cspcheck.exe
 
 Add-Type -AssemblyName System.Windows.Forms
 
 New-Item -ItemType "directory" -Path $env:TEMP\CSPCheck -Force
 Set-Location $env:TEMP\CSPCheck
 
-$appname = 'CSPCheck'
+$appname = 'КриптоМАКС'
 $cspname = 'КриптоПро CSP'
 $plugname = 'КриптоПро ЭЦП Browser plug-in'
 $rtknname = 'Драйверы Рутокен'
